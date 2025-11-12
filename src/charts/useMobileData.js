@@ -5,7 +5,7 @@ export default function useMobileData() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        d3.csv("/src/data/mobiles.csv").then(raw => {
+        d3.csv("public/data/mobiles.csv").then(raw => {
             const cleaned = raw.map(d => {
                 // ✅ Limpieza correcta del almacenamiento
                 let storageValue = (d.storage_gb || "").toString().trim();
