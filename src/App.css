@@ -1,0 +1,90 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  background: #f3f5fa;
+  color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+  gap: 28px;
+  padding: 28px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  color: #1a1a1a;     /* ✅ Texto visible */
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.neon-dot {
+  filter: drop-shadow(0 0 6px rgba(100, 200, 255, 0.9));
+  transition: 0.25s;
+}
+.neon-dot:hover {
+  filter: drop-shadow(0 0 12px rgba(120, 240, 255, 1));
+  transform: scale(1.6);
+}
